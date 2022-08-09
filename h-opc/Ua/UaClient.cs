@@ -373,6 +373,7 @@ namespace Hylasoft.Opc.Ua
         };
 
         var monitorEvent = new ReadEvent<T>();
+        monitorEvent.Tag=tag;
         monitorEvent.Value = (T)t;
         monitorEvent.SourceTimestamp = p.Value.SourceTimestamp;
         monitorEvent.ServerTimestamp = p.Value.ServerTimestamp;
