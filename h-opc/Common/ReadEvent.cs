@@ -13,6 +13,12 @@ namespace Hylasoft.Opc.Common
   /// <typeparam name="T"></typeparam>
   public class ReadEvent<T>
   {
+  
+    /// <summary>
+    /// Gets the TagName of the monitored tag
+    /// </summary>    
+    public string Tag { get; set; }
+
     /// <summary>
     /// Gets the value that was read from the server
     /// </summary>
